@@ -1,0 +1,64 @@
+{
+    "name": "yiisoft/app-template",
+    "type": "project",
+    "description": "App Template",
+    "keywords": [
+        "yii",
+        "app",
+        "template"
+    ],
+    "homepage": "https://github.com/yiisoft/app-template",
+    "license": "BSD-3-Clause",
+    "support": {
+        "source": "https://github.com/yiisoft/app-template",
+        "issues": "https://github.com/yiisoft/app-template/issues",
+        "wiki": "https://github.com/yiisoft/app-template/wiki",
+        "forum": "http://www.yiiframework.com/forum/"
+    },
+    "authors": [
+        {
+            "name": "Qiang Xue",
+            "role": "Founder and project lead",
+            "email": "qiang.xue@gmail.com",
+            "homepage": "http://www.yiiframework.com/"
+        },
+        {
+            "name": "Alexander Makarov",
+            "role": "Core framework development",
+            "email": "sam@rmcreative.ru",
+            "homepage": "http://rmcreative.ru/"
+        },
+        {
+            "name": "Maurizio Domba",
+            "role": "Core framework development",
+            "homepage": "http://mdomba.info/"
+        },
+        {
+            "name": "Carsten Brandt",
+            "role": "Core framework development",
+            "email": "mail@cebe.cc",
+            "homepage": "http://cebe.cc/"
+        },
+        {
+            "name": "Paul Klimov",
+            "role": "Core framework development",
+            "email": "klimov.paul@gmail.com"
+        },
+        {
+            "name": "Dmitry Naumenko",
+            "role": "Core framework development",
+            "email": "d.naumenko.a@gmail.com"
+        },
+        {
+            "name": "Boudewijn Vahrmeijer",
+            "role": "Core framework development",
+            "email": "info@dynasource.eu",
+            "homepage": "http://dynasource.eu"
+        }
+    ],
+    "require-dev": {
+        "hiqdev/hidev-php": "<2.0 || dev-master",
+        "hiqsol/hidev-yiisoft": "<2.0 || dev-master"
+    },
+    "minimum-stability": "dev"
+}

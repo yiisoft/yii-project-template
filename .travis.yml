@@ -1,0 +1,21 @@
+language: php
+php:
+    - 7.1
+    - 7.2
+dist: trusty
+cache:
+    directories:
+        - $HOME/.composer/cache
+before_install:
+    - 'composer self-update'
+    - 'composer --version'
+    - 'wget http://hiqdev.com/hidev/hidev.phar -O hidev.phar && chmod a+x hidev.phar'
+    - './hidev.phar --version'
+    - './hidev.phar travis/before-install'
+sudo: false
+install:
+    - './hidev.phar travis/install'
+script:
+    - './hidev.phar travis/script'
+after_script:
+    - './hidev.phar travis/after-script'

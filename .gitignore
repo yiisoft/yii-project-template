@@ -1,0 +1,38 @@
+# hidev internals
+/.hidev/composer.json
+/.hidev/composer.lock
+/.hidev/runtime
+/.hidev/vendor
+
+# local config
+/.env
+/hidev-local.yml
+
+# IDE & OS files
+.*.swp
+.DS_Store
+.buildpath
+.idea
+.project
+.settings
+Thumbs.db
+nbproject
+
+# composer internals
+/composer.lock
+/vendor
+
+# php-cs-fixer cache
+.php_cs.cache
+
+# phpunit generated files
+coverage.clover
+
+# Binaries
+chkipper.phar
+composer.phar
+ocular.phar
+php-cs-fixer.phar
+phpstan.phar
+phpunit-skelgen.phar
+phpunit.phar
