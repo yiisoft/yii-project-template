@@ -56,9 +56,26 @@
             "homepage": "http://dynasource.eu"
         }
     ],
-    "require-dev": {
-        "hiqdev/hidev-php": "<2.0 || dev-master",
-        "hiqsol/hidev-yiisoft": "<2.0 || dev-master"
+    "require": {
+        "yiisoft/app": "dev-sol"
     },
-    "minimum-stability": "dev"
+    "require-dev": {
+        "yiisoft/yii2-debug": "2.1.x-dev",
+        "yiisoft/yii2-gii": "2.1.x-dev",
+        "phpunit/phpunit": "^7.0"
+    },
+    "extra": {
+        "config-plugin": {
+            "params": "config/params.php",
+            "common": "config/common.php",
+            "web": "config/web.php"
+        }
+    },
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }
