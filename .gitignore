@@ -36,3 +36,12 @@ php-cs-fixer.phar
 phpstan.phar
 phpunit-skelgen.phar
 phpunit.phar
+
+# Assets
+/public/assets
+/runtime
+
+# Docker
+/.docker/nginx/var/log/nginx/access.log
+/.docker/nginx/var/log/nginx/error.log
+/.docker/php/var/log/php/php.log
