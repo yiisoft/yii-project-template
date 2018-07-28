@@ -6,10 +6,9 @@ use yii\helpers\Yii;
 
 (function () {
     require_once __DIR__ . '/../vendor/autoload.php';
-    require_once Builder::path('defines');
 
-    $config = require Builder::path('web');
-    $container = new Container($config);
+    $container = new Container(require Builder::path('web'));
+
     Yii::setContainer($container);
 
     $container->get('app')->run();
