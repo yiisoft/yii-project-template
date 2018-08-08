@@ -57,11 +57,11 @@
         }
     ],
     "require": {
-        "yiisoft/app": "dev-sol"
+        "yiisoft/yii-app": "^1.0"
     },
     "require-dev": {
-        "yiisoft/yii2-debug": "2.1.x-dev",
-        "yiisoft/yii2-gii": "2.1.x-dev",
+        "yiisoft/yii-debug": "^1.0",
+        "yiisoft/yii-gii": "^1.0",
         "phpunit/phpunit": "^7.0"
     },
     "extra": {
