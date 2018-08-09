@@ -57,14 +57,17 @@
         }
     ],
     "require": {
-        "yiisoft/yii-app": "^1.0"
+        "yiisoft/yii-app": "^3.0"
     },
     "require-dev": {
-        "yiisoft/yii-debug": "^1.0",
-        "yiisoft/yii-gii": "^1.0",
+        "yiisoft/yii-debug": "^3.0",
+        "yiisoft/yii-gii": "^3.0",
         "phpunit/phpunit": "^7.0"
     },
     "extra": {
+        "branch-alias": {
+            "dev-master": "3.0.x-dev"
+        },
         "config-plugin": {
             "params": "config/params.php",
             "common": "config/common.php",
