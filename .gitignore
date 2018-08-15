@@ -39,7 +39,6 @@ phpunit.phar
 
 # Assets
 /public/assets
-/runtime
 
 # Docker
 /.docker/nginx/var/log/nginx/access.log
