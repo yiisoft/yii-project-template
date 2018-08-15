@@ -1,42 +1,36 @@
 <p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
+    <a href="http://www.yiiframework.com/" target="_blank">
+        <img src="https://www.yiiframework.com/files/logo/yii.png" width="400" alt="Yii Framework" />
     </a>
-    <h1 align="center">Yii 3.0 Project Template</h1>
+    <h1 align="center">Yii Framework Application Template</h1>
     <br>
 </p>
 
-Yii 3.0 Project Template is a skeleton [Yii](http://www.yiiframework.com/) application best for
+[Yii Framework] Application Template is a skeleton application best for
 rapidly creating projects.
+
+[Yii Framework]: http://www.yiiframework.com/
 
 The template contains the basic features including user login/logout and a contact page.
 It includes all commonly used configurations that would allow you to focus on adding new
 features to your application.
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/app.svg)](https://packagist.org/packages/yiisoft/app)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/app.svg)](https://packagist.org/packages/yiisoft/app)
-[![Build Status](https://travis-ci.org/yiisoft/app.svg?branch=master)](https://travis-ci.org/yiisoft/app)
+[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii-app-template.svg)](https://packagist.org/packages/yiisoft/yii-app-template)
+[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii-app-template.svg)](https://packagist.org/packages/yiisoft/yii-app-template)
+[![Build Status](https://travis-ci.org/yiisoft/yii-app-template.svg?branch=master)](https://travis-ci.org/yiisoft/yii-app-template)
 
 DIRECTORY STRUCTURE
 -------------------
 
 ```
-bin/
 config/             contains application configurations
-public/             contains the entry script for a web server
+public/             contains the entry script, published assets and other publicly available files e.g. favicon.ico and robots.txt
 runtime/            contains files generated during runtime
-src/
-  assets/             contains assets definition
-  commands/           contains console commands (controllers)
-  controllers/        contains Web controller classes
-  mail/               contains view files for e-mails
-  models/             contains model classes
-  views/              contains view files for the Web application
-tests/              contains various tests for the basic application
 vendor/             contains dependent 3rd-party packages
 .env
 .env.dist
 composer.json
+docker-compose.yml
 ```
 
 REQUIREMENTS
@@ -55,7 +49,7 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 You can then install this project template using the following command:
 
 ~~~
-composer create-project --prefer-dist --stability=dev yiisoft/app myapp
+composer create-project --prefer-dist --stability=dev yiisoft/yii-app-template myapp
 cd myapp
 ./bin/yii serve
 ~~~
