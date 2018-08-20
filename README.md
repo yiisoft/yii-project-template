@@ -51,7 +51,7 @@ You can then install this project template using the following command:
 ~~~
 composer create-project --prefer-dist --stability=dev yiisoft/yii-app-template myapp
 cd myapp
-./bin/yii serve
+./vendor/bin/yii serve
 ~~~
 
 Now you should be able to access the application via `http://localhost:8080/`.
