@@ -58,7 +58,11 @@ Now you should be able to access the application via `http://localhost:8080/`.
 
 ### Docker
 
-Clone the repository and install vendor packages
+Clone the repository and create the environment configuration file
+
+    cp .env.dist .env
+
+Install vendor packages
 
     docker-compose run --rm php composer install
     
