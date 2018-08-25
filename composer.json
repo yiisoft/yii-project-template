@@ -58,7 +58,7 @@
         }
     ],
     "require": {
-        "yiisoft/yii-app": "^3.0"
+        "yiisoft/yii-base-web": "^3.0"
     },
     "require-dev": {
         "yiisoft/yii-debug": "^3.0",
