@@ -1,5 +1,5 @@
 package:
     type:       project
-    name:       app-template
-    title:      App Template
-    keywords:   yii, app, template
+    name:       yii-project-template
+    title:      Yii Framework Project Template
+    keywords:   yii, app, project, template
