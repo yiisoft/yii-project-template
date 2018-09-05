@@ -2,11 +2,11 @@
     <a href="http://www.yiiframework.com/" target="_blank">
         <img src="https://www.yiiframework.com/files/logo/yii.png" width="400" alt="Yii Framework" />
     </a>
-    <h1 align="center">Yii Framework Application Template</h1>
+    <h1 align="center">Yii Framework Project Template</h1>
     <br>
 </p>
 
-[Yii Framework] Application Template is a skeleton application best for
+[Yii Framework] Project Template is a skeleton application best for
 rapidly creating projects.
 
 [Yii Framework]: http://www.yiiframework.com/
@@ -15,9 +15,9 @@ The template contains the basic features including user login/logout and a conta
 It includes all commonly used configurations that would allow you to focus on adding new
 features to your application.
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii-app-template.svg)](https://packagist.org/packages/yiisoft/yii-app-template)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii-app-template.svg)](https://packagist.org/packages/yiisoft/yii-app-template)
-[![Build Status](https://travis-ci.org/yiisoft/yii-app-template.svg?branch=master)](https://travis-ci.org/yiisoft/yii-app-template)
+[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii-project-template.svg)](https://packagist.org/packages/yiisoft/yii-project-template)
+[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii-project-template.svg)](https://packagist.org/packages/yiisoft/yii-project-template)
+[![Build Status](https://travis-ci.org/yiisoft/yii-project-template.svg?branch=master)](https://travis-ci.org/yiisoft/yii-project-template)
 
 DIRECTORY STRUCTURE
 -------------------
@@ -49,7 +49,7 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 You can then install this project template using the following command:
 
 ~~~
-composer create-project --prefer-dist --stability=dev yiisoft/yii-app-template myapp
+composer create-project --prefer-dist --stability=dev yiisoft/yii-project-template myapp
 cd myapp
 ./vendor/bin/yii serve
 ~~~
