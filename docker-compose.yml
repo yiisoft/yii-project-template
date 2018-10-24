@@ -1,36 +1,14 @@
 version: '3'
 
 services:
-  nginx:
-    image: nginx:latest
+
+  php:
+    image: yiisoftware/yii2-php:7.2-apache
+    volumes:
+      - ./:/app
+      # TODO: temporary workaround for public web-root
+      - ./public:/app/web
+      # host-volume for composer cache
+      - ~/.composer-docker/cache:/root/.composer/cache:delegated
     ports:
-      - "80"
-    volumes:
-      - ./:/app
-      - ./.docker/nginx/etc/nginx/conf.d:/etc/nginx/conf.d
-      - ./.docker/nginx/var/log/nginx:/var/log/nginx
-    networks:
-      - proxy-network
-      - local-network
-    environment:
-      - "VIRTUAL_HOST=${HOSTS}"
-      - "LETSENCRYPT_HOST=${HOSTS}"
-      - "LETSENCRYPT_EMAIL=devteam@hiqdev.com"
-
-  php-fpm:
-    image: hiqdev/php:7.2-fpm
-    volumes:
-      - ./:/app
-      - ./.docker/php/var/log/php:/var/log/php
-    networks:
-      - local-network
-    environment:
-      - "ENV=${ENV}"
-
-networks:
-    local-network:
-        driver: bridge
-    proxy-network:
-        external:
-            name: "nginx-proxy-network-${REAL_IP}"
-
+      - '30080:80'

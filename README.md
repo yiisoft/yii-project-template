@@ -62,6 +62,8 @@ Clone the repository and create the environment configuration file
 
     cp .env.dist .env
 
+> Depending on your host system you might need to give write permissions to `./runtime` and `./public/assets`
+
 Install vendor packages
 
     docker-compose run --rm php composer install
