@@ -64,6 +64,20 @@ Clone the repository and create the environment configuration file
 
 > Depending on your host system you might need to give write permissions to `./runtime` and `./public/assets`
 
+Choose an asset distribution system, e.g. if you plan to use a web-application base
+
+*a) Asset-packagist & composer-merge-plugin*
+
+    docker-compose run --rm php \
+        composer require "wikimedia/composer-merge-plugin" && \
+        composer config repositories.ap '{"type": "composer", "url": "https://asset-packagist.org"}' && \
+        composer config extra.merge-plugin.require "composer.asset.json"
+        
+*b) Foxy*
+
+    docker-compose run --rm php \
+        composer require "foxy/foxy:^1.0.0"
+
 Choose application base packages
 
     docker-compose run --rm php \
