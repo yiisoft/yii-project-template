@@ -64,9 +64,17 @@ Clone the repository and create the environment configuration file
 
 > Depending on your host system you might need to give write permissions to `./runtime` and `./public/assets`
 
+Choose application base packages
+
+    docker-compose run --rm php \
+        composer require yiisoft/yii-base-web
+
+> You can find available application bases on [GitHub](https://github.com/yiisoft?utf8=✓&q=yii-base).
+
 Install vendor packages
 
-    docker-compose run --rm php composer install
+    docker-compose run --rm php \
+        composer install
     
 Start application stack
 
