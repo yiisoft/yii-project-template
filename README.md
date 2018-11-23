@@ -49,13 +49,49 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 You can then install this project template using the following command:
 
 ~~~
-composer create-project --prefer-dist --stability=dev yiisoft/yii-project-template myapp
-composer require yiisoft/yii-base-web
-cd myapp
-./vendor/bin/yii serve
+$ composer create-project --prefer-dist --stability=dev yiisoft/yii-project-template myapp
+$ cd myapp
 ~~~
 
+> Depending on your host system you might need to give write permissions to `./runtime` and `./public/assets`
+
+### CLI application
+
+    $ composer require yiisoft/yii-base-cli
+
+You can now run `yii help` to see the available commands.
+
+### API application
+
+    $ composer require yiisoft/yii-base-api
+    
+You can access the API via `http://localhost:8081/`.
+
+### Web application
+
+Since web-applications use client-side assets, such as CSS and Javascript, you first choose an asset distribution system
+
+> *a) Asset-packagist & composer-merge-plugin (requires only `PHP`)*
+> 
+>     $ composer require "wikimedia/composer-merge-plugin" && \
+>     composer config repositories.ap '{"type": "composer", "url": "https://asset-packagist.org"}' && \
+>     composer config extra.merge-plugin.include "vendor/*/*/composer.assets.json"
+>         
+> *b) Foxy (requires `npm` or `yarn`)*
+> 
+>     $ composer require "foxy/foxy:^1.0.0"
+> 
+
+Now you are able to install the web-application base along with its dependencies
+ 
+     $ composer require yiisoft/yii-base-web
+ 
 Now you should be able to access the application via `http://localhost:8080/`.
+
+---
+
+> You can find more available application bases on [GitHub](https://github.com/yiisoft?utf8=✓&q=yii-base).
+
 
 ### Docker
 
@@ -63,34 +99,12 @@ Clone the repository and create the environment configuration file
 
     cp .env.dist .env
 
-> Depending on your host system you might need to give write permissions to `./runtime` and `./public/assets`
+To run the installation create a bash from the PHP image
 
-Choose an asset distribution system, e.g. if you plan to use a web-application base
-
-*a) Asset-packagist & composer-merge-plugin*
-
-    docker-compose run --rm php \
-        composer require "wikimedia/composer-merge-plugin" && \
-        composer config repositories.ap '{"type": "composer", "url": "https://asset-packagist.org"}' && \
-        composer config extra.merge-plugin.require "composer.asset.json"
-        
-*b) Foxy*
-
-    docker-compose run --rm php \
-        composer require "foxy/foxy:^1.0.0"
-
-Choose application base packages
-
-    docker-compose run --rm php \
-        composer require yiisoft/yii-base-web
-
-> You can find available application bases on [GitHub](https://github.com/yiisoft?utf8=✓&q=yii-base).
-
-Install vendor packages
-
-    docker-compose run --rm php \
-        composer install
+    docker-compose run --rm php bash
     
+and run the `composer` commands above.
+   
 Start application stack
 
     docker-compose up -d
@@ -128,3 +142,7 @@ TESTING
 -------
 
 Tests are located in `tests` directory.
+
+Run directly from Docker image
+
+    docker run -it -v $PWD/yii-project:/app -w /app yiisoftware/yii2-php:7.2-apache bash
