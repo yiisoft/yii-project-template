@@ -49,11 +49,31 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 You can then install this project template using the following command:
 
 ~~~
-composer create-project --prefer-dist --stability=dev yiisoft/yii-project-template myapp
-composer require yiisoft/yii-base-web
-cd myapp
-./vendor/bin/yii serve
+$ composer create-project --prefer-dist --stability=dev yiisoft/yii-project-template myapp
+$ cd myapp
 ~~~
+
+> Depending on your host system you might need to give write permissions to `./runtime` and `./public/assets`
+
+### Web application
+
+Choose an asset distribution system, e.g. if you plan to use a web-application base
+
+*a) Asset-packagist & composer-merge-plugin*
+
+        $ composer require "wikimedia/composer-merge-plugin" && \
+        composer config repositories.ap '{"type": "composer", "url": "https://asset-packagist.org"}' && \
+        composer config extra.merge-plugin.require "composer.asset.json"
+        
+*b) Foxy*
+
+        $ composer require "foxy/foxy:^1.0.0"
+
+Choose application base packages
+
+        $ composer require yiisoft/yii-base-web
+
+> You can find available application bases on [GitHub](https://github.com/yiisoft?utf8=✓&q=yii-base).
 
 Now you should be able to access the application via `http://localhost:8080/`.
 
@@ -63,34 +83,12 @@ Clone the repository and create the environment configuration file
 
     cp .env.dist .env
 
-> Depending on your host system you might need to give write permissions to `./runtime` and `./public/assets`
+To run the installation create a bash from the PHP image
 
-Choose an asset distribution system, e.g. if you plan to use a web-application base
-
-*a) Asset-packagist & composer-merge-plugin*
-
-    docker-compose run --rm php \
-        composer require "wikimedia/composer-merge-plugin" && \
-        composer config repositories.ap '{"type": "composer", "url": "https://asset-packagist.org"}' && \
-        composer config extra.merge-plugin.require "composer.asset.json"
-        
-*b) Foxy*
-
-    docker-compose run --rm php \
-        composer require "foxy/foxy:^1.0.0"
-
-Choose application base packages
-
-    docker-compose run --rm php \
-        composer require yiisoft/yii-base-web
-
-> You can find available application bases on [GitHub](https://github.com/yiisoft?utf8=✓&q=yii-base).
-
-Install vendor packages
-
-    docker-compose run --rm php \
-        composer install
+    docker-compose run --rm php bash
     
+and run the `composer` commands above.
+   
 Start application stack
 
     docker-compose up -d
