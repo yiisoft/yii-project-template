@@ -82,7 +82,7 @@ Since web-applications use client-side assets, such as CSS and Javascript, you f
 >     $ composer require "foxy/foxy:^1.0.0"
 > 
 
-Choose application base packages
+Now you are able to install the web-application base along with its dependencies
  
      $ composer require yiisoft/yii-base-web
  
