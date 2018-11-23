@@ -72,6 +72,11 @@
         }
     },
     "config": {
+        "foxy": {
+            "enable-packages": {
+                "*": true
+            }
+        },
         "fxp-asset": {
             "enabled": false
         }
