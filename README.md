@@ -48,22 +48,29 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 
 You can then install this project template using the following command:
 
-~~~
-$ composer create-project --prefer-dist --stability=dev yiisoft/yii-project-template myapp
-$ cd myapp
-~~~
+    composer create-project --prefer-dist --stability=dev yiisoft/yii-project-template myapp
+    cd myapp
 
-> Depending on your host system you might need to give write permissions to `./runtime` and `./public/assets`
+This gives you an empty project, which you can add application templates to, see the following sections on how
+to add these.
+
+> Depending on your system you might need to give write permissions to `./runtime` and `./public/assets`
 
 ### CLI application
 
-    $ composer require yiisoft/yii-base-cli
+If you want to install a console application, which is needed for running your own console commands, you can add it
+by requiring the [yiisoft/yii-base-cli](https://github.com/yiisoft/yii-base-cli) package.
+
+    composer require yiisoft/yii-base-cli
 
 You can now run `yii help` to see the available commands.
 
 ### API application
 
-    $ composer require yiisoft/yii-base-api
+If you want to create an API, you can add it by requiring the [yiisoft/yii-base-api](https://github.com/yiisoft/yii-base-api) package.
+
+    composer require yiisoft/yii-base-api
+    vendor/bin/yii serve -p 8081
     
 You can access the API via `http://localhost:8081/`.
 
@@ -73,18 +80,19 @@ Since web-applications use client-side assets, such as CSS and Javascript, you f
 
 > *a) Asset-packagist & composer-merge-plugin (requires only `PHP`)*
 > 
->     $ composer require "wikimedia/composer-merge-plugin" && \
+>     composer require "wikimedia/composer-merge-plugin" && \
 >     composer config repositories.ap '{"type": "composer", "url": "https://asset-packagist.org"}' && \
 >     composer config extra.merge-plugin.include "vendor/*/*/composer.assets.json"
 >         
 > *b) Foxy (requires `npm` or `yarn`)*
 > 
->     $ composer require "foxy/foxy:^1.0.0"
+>     composer require "foxy/foxy:^1.0.0"
 > 
 
 Now you are able to install the web-application base along with its dependencies
  
-     $ composer require yiisoft/yii-base-web
+     composer require yiisoft/yii-base-web
+     vendor/bin/yii serve
  
 Now you should be able to access the application via `http://localhost:8080/`.
 
