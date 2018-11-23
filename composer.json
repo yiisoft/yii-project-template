@@ -57,34 +57,23 @@
             "homepage": "http://dynasource.eu"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
-        "yiisoft/yii-base-web": "^3.0"
     },
     "require-dev": {
-        "yiisoft/yii-debug": "^3.0",
-        "yiisoft/yii-gii": "^3.0",
-        "phpunit/phpunit": "^7.0"
     },
     "extra": {
         "branch-alias": {
             "dev-master": "3.0.x-dev"
         },
         "config-plugin": {
-            "params": "config/params.php",
             "common": "config/common.php",
-            "web": "config/web.php"
+            "params": "config/params.php"
         }
     },
     "config": {
         "fxp-asset": {
             "enabled": false
         }
-    },
-    "minimum-stability": "dev",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ]
+    }
 }

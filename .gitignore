@@ -1,12 +1,5 @@
-# hidev internals
-/.hidev/composer.json
-/.hidev/composer.lock
-/.hidev/runtime
-/.hidev/vendor
-
 # local config
 /.env
-/hidev-local.yml
 
 # IDE & OS files
 .*.swp
@@ -19,7 +12,6 @@ Thumbs.db
 nbproject
 
 # composer internals
-/composer.lock
 /vendor
 
 # php-cs-fixer cache
@@ -40,7 +32,3 @@ phpunit.phar
 # Assets
 /public/assets
 
-# Docker
-/.docker/nginx/var/log/nginx/access.log
-/.docker/nginx/var/log/nginx/error.log
-/.docker/php/var/log/php/php.log
