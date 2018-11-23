@@ -10,4 +10,4 @@ before_install:
     - 'composer install'
 sudo: false
 script:
-    - 'yii'
+    - 'vendor/bin/yii'
