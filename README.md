@@ -61,17 +61,17 @@ Choose an asset distribution system, e.g. if you plan to use a web-application b
 
 *a) Asset-packagist & composer-merge-plugin*
 
-        $ composer require "wikimedia/composer-merge-plugin" && \
-        composer config repositories.ap '{"type": "composer", "url": "https://asset-packagist.org"}' && \
-        composer config extra.merge-plugin.require "composer.asset.json"
+    $ composer require "wikimedia/composer-merge-plugin" && \
+    composer config repositories.ap '{"type": "composer", "url": "https://asset-packagist.org"}' && \
+    composer config extra.merge-plugin.require "composer.asset.json"
         
 *b) Foxy*
 
-        $ composer require "foxy/foxy:^1.0.0"
+    $ composer require "foxy/foxy:^1.0.0"
 
 Choose application base packages
 
-        $ composer require yiisoft/yii-base-web
+    $ composer require yiisoft/yii-base-web
 
 > You can find available application bases on [GitHub](https://github.com/yiisoft?utf8=✓&q=yii-base).
 
