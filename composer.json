@@ -59,6 +59,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
+        "yiisoft/yii-console": "^3.0@dev"
     },
     "require-dev": {
     },
