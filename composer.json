@@ -75,6 +75,11 @@
             "web": "config/web.php"
         }
     },
+    "config": {
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
     "minimum-stability": "dev",
     "repositories": [
         {
