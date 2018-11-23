@@ -55,27 +55,43 @@ $ cd myapp
 
 > Depending on your host system you might need to give write permissions to `./runtime` and `./public/assets`
 
+### CLI application
+
+    $ composer require yiisoft/yii-base-cli
+
+You can now run `yii help` to see the available commands.
+
+### API application
+
+    $ composer require yiisoft/yii-base-api
+    
+You can access the API via `http://localhost:8081/`.
+
 ### Web application
 
-Choose an asset distribution system, e.g. if you plan to use a web-application base
+Since web-applications use client-side assets, such as CSS and Javascript, you first choose an asset distribution system
 
-*a) Asset-packagist & composer-merge-plugin*
-
-    $ composer require "wikimedia/composer-merge-plugin" && \
-    composer config repositories.ap '{"type": "composer", "url": "https://asset-packagist.org"}' && \
-    composer config extra.merge-plugin.include "vendor/*/*/composer.assets.json"
-        
-*b) Foxy (requires `npm` or `yarn`)*
-
-    $ composer require "foxy/foxy:^1.0.0"
+> *a) Asset-packagist & composer-merge-plugin (requires only `PHP`)*
+> 
+>     $ composer require "wikimedia/composer-merge-plugin" && \
+>     composer config repositories.ap '{"type": "composer", "url": "https://asset-packagist.org"}' && \
+>     composer config extra.merge-plugin.include "vendor/*/*/composer.assets.json"
+>         
+> *b) Foxy (requires `npm` or `yarn`)*
+> 
+>     $ composer require "foxy/foxy:^1.0.0"
+> 
 
 Choose application base packages
-
-    $ composer require yiisoft/yii-base-web
-
-> You can find available application bases on [GitHub](https://github.com/yiisoft?utf8=✓&q=yii-base).
-
+ 
+     $ composer require yiisoft/yii-base-web
+ 
 Now you should be able to access the application via `http://localhost:8080/`.
+
+---
+
+> You can find more available application bases on [GitHub](https://github.com/yiisoft?utf8=✓&q=yii-base).
+
 
 ### Docker
 
