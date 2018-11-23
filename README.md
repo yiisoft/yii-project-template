@@ -65,7 +65,7 @@ Choose an asset distribution system, e.g. if you plan to use a web-application b
     composer config repositories.ap '{"type": "composer", "url": "https://asset-packagist.org"}' && \
     composer config extra.merge-plugin.include "vendor/*/*/composer.assets.json"
         
-*b) Foxy*
+*b) Foxy (requires `npm` or `yarn`)*
 
     $ composer require "foxy/foxy:^1.0.0"
 
