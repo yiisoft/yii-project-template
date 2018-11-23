@@ -70,5 +70,10 @@
             "common": "config/common.php",
             "params": "config/params.php"
         }
+    },
+    "config": {
+        "fxp-asset": {
+            "enabled": false
+        }
     }
 }
