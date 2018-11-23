@@ -63,7 +63,7 @@ Choose an asset distribution system, e.g. if you plan to use a web-application b
 
     $ composer require "wikimedia/composer-merge-plugin" && \
     composer config repositories.ap '{"type": "composer", "url": "https://asset-packagist.org"}' && \
-    composer config extra.merge-plugin.require "composer.asset.json"
+    composer config extra.merge-plugin.include "vendor/*/*/composer.assets.json"
         
 *b) Foxy*
 
@@ -126,3 +126,7 @@ TESTING
 -------
 
 Tests are located in `tests` directory.
+
+Run directly from Docker image
+
+    docker run -it -v $PWD/yii-project:/app -w /app yiisoftware/yii2-php:7.2-apache bash
