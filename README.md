@@ -50,6 +50,7 @@ You can then install this project template using the following command:
 
 ~~~
 composer create-project --prefer-dist --stability=dev yiisoft/yii-project-template myapp
+composer require yiisoft/yii-base-web
 cd myapp
 ./vendor/bin/yii serve
 ~~~
