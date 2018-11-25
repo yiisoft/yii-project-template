@@ -80,8 +80,8 @@ Since web-applications use client-side assets, such as CSS and Javascript, you f
 
 > *a) Asset-packagist & composer-merge-plugin (requires only `PHP`)*
 > 
->     composer require "wikimedia/composer-merge-plugin" && \
->     composer config repositories.ap '{"type": "composer", "url": "https://asset-packagist.org"}' && \
+>     composer require "wikimedia/composer-merge-plugin"
+>     composer config repositories.ap '{"type": "composer", "url": "https://asset-packagist.org"}'
 >     composer config extra.merge-plugin.include "vendor/*/*/composer.assets.json"
 >         
 > *b) Foxy (requires `npm` or `yarn`)*
