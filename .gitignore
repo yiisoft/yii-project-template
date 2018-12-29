@@ -14,6 +14,9 @@ nbproject
 # composer internals
 /vendor
 
+# node modules
+/node_modules
+
 # php-cs-fixer cache
 .php_cs.cache
 
