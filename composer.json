@@ -68,6 +68,7 @@
         "yiisoft/cache": "^3.0@dev",
         "yiisoft/di": "^3.0@dev",
         "yiisoft/log": "^3.0@dev",
+        "yiisoft/log-target-file": "^3.0@dev",
         "yiisoft/rbac": "^3.0@dev",
         "yiisoft/view": "^3.0@dev"
     },
