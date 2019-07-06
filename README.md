@@ -86,7 +86,7 @@ Since web-applications use client-side assets, such as CSS and Javascript, you f
 >         
 > *b) Foxy (requires `npm` or `yarn`)*
 > 
->     composer require "foxy/foxy:^1.0.0"
+>     composer require "fxpio/foxy:^1.0.0"
 > 
 
 Now you are able to install the web-application base along with its dependencies
