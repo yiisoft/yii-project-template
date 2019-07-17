@@ -1,15 +1,12 @@
 <?php
 
 use hiqdev\composer\config\Builder;
-use yii\di\Container;
-use yii\helpers\Yii;
+use Yiisoft\Di\Container;
 
 (function () {
     require_once __DIR__ . '/../vendor/autoload.php';
 
     $container = new Container(require Builder::path('web'));
-
-    Yii::setContainer($container);
 
     $container->get('app')->run();
 })();
