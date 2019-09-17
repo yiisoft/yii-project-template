@@ -70,7 +70,8 @@
         "yiisoft/log": "^3.0@dev",
         "yiisoft/log-target-file": "^3.0@dev",
         "yiisoft/rbac": "^3.0@dev",
-        "yiisoft/view": "^3.0@dev"
+        "yiisoft/view": "^3.0@dev",
+        "yiisoft/event-dispatcher": "^3.0@dev"
     },
     "require-dev": {
         "foxy/foxy": "^1.0",
