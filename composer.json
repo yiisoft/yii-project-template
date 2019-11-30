@@ -95,6 +95,7 @@
         },
         "fxp-asset": {
             "enabled": false
-        }
+        },
+        "sort-packages": true
     }
 }
