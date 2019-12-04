@@ -11,3 +11,20 @@ before_install:
 sudo: false
 script:
     - 'vendor/bin/yii'
+
+notifications:
+  slack:
+    -
+      rooms:
+        -
+          secure: de+W1lLRJ+BIVJHw2zvOGCNRQEOzKeRVPtUmPF/vTMoZxNBURWe2cYa0eoRaQ3sx4Knx8o9DE3j2ztKavwpFygSF2F69u0rRz5vwBQIohFjCcqy//JvUOtXVRtApCfy1xYuAiJw8/iuwNLgnPnHObYQeJMYU/rLnuy2ebW5l7utfwzzuI87CL1QLZhBFyGeXaJ9aoI6fbvMp4DHf4LWPS6xIyxAydxYcPCDf2zyBPiRfZ9A5KB2/4LjTBzByubju0MUwx/U2P6L/yXgg1frUbVkKWVr+8DUS6sE+844AaCr+50zWKGYetAtBucOmheH0QRhRHquaLPxyY/ue4UYrB5ndy9VzNz8nD8+gieDAVY922/vuSeXY5yI6lLGKg/DvrwKSx/rmVlucZJH+3R8c1PSb6GjXESj5MUqBo43UI2qOcD6Zw6PZQKL3/l5BoIaGk1m9AzqTJIlhYkqUvfcecDvPkwoOkd+r3Vqtuwu6ByBsdtgN0FcTC33UNV5y3uq9BUS6JflpKjlCPJLOJlDwG7GfFK8HyFDVSkX0epNmwrMFn732zEJe0UyZT5i0e0XZrdtT6nqIFiA6UZqbPpPLy0RSYnPcxgIZHTt7+ts/fz6whYNW9h3rHlzGREzbOzGXedcvVUsZ5XrMGYP14Gzqc29KYyxBSfF1Niq7PSpSGyU=
+      on_success: always
+      on_failure: never
+      on_pull_requests: false
+    -
+      rooms:
+        -
+          secure: FA/Belyk7p+e+Qvv5RkC8fP/LKugOkONmdOK/JZEgqYgtUcu+PURssXrBvPYIselX36pF9EUucR1h1NvEYWnCVLrN7EHOK0FYBFI7Ykcv6Kg79nWW7b97Thvov5z1m01Y6/yVnLm9uByq6SIIrA7hOe+zvhChtdV388d6hwf+rgGoyf9kvhOZ3J/hkyQGtiTEVjcCUNnB1RizIRstEPM8A+4mDoC1otZhygXJIKExWIcQemOoTPYQP+J6hA63CkMjpDI1tb6X0dSc8QcdBVu/JFN/8Wk1+8vD08OCP0ip7AmK07mkXrT6eB+/6IhGp4SjvXpA/CP7q8rMSn7gGIof+/wox6RnI1plZioz7IUzfMYhVwZmlaQ54R4DsaaUjI0jA9MDengurTA+8X83ZtWfI/Rc/o3DFiADxrR2gpHH9hJ0DpQWKr8URXiSOwFlDAXN85fBl0zFuVVJ5sDMaYHh0R5lXB125GDzWXtQmpxheIOXdpWug6dLcWMzTyEM43w1MuWIMdFiOHBp4vmUGUPDJ8hxBcaBcdBXoPbRqTYSJ7WgKode2UnijtGf/xpZkWKh1xwTzQ0jmeEibkxxsJPkBh415gSpk3V1ABOtI9LRovEgfpNK2nUb/sgxA20n4ZUwKjy91pyl2XCO1ib6zwfkzemTGLC4wVbs3jfkeSSdJo=
+      on_success: never
+      on_failure: always
+      on_pull_requests: false
