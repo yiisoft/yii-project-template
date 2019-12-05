@@ -59,7 +59,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": "^7.2",
+        "php": "^7.4",
         "yiisoft/yii-base-web": "^3.0@dev",
         "yiisoft/yii-dataview": "^3.0@dev",
         "yiisoft/yii-bootstrap4": "^3.0@dev",
