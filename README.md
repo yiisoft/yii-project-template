@@ -17,7 +17,7 @@ features to your application.
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii-project-template.svg)](https://packagist.org/packages/yiisoft/yii-project-template)
 [![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii-project-template.svg)](https://packagist.org/packages/yiisoft/yii-project-template)
-[![Build Status](https://travis-ci.org/yiisoft/yii-project-template.svg?branch=master)](https://travis-ci.org/yiisoft/yii-project-template)
+[![Build Status](https://travis-ci.com/yiisoft/yii-project-template.svg?branch=master)](https://travis-ci.com/yiisoft/yii-project-template)
 
 DIRECTORY STRUCTURE
 -------------------
