@@ -133,7 +133,7 @@ Edit the file `config/db.php` with real data, for example:
 ```php
 return [
     'class' => 'Yiisoft\Db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
+    'dsn' => 'mysql:host=localhost;dbname=yii_db_name',
     'username' => 'root',
     'password' => '1234',
     'charset' => 'utf8',
