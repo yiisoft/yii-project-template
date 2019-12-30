@@ -37,7 +37,7 @@ REQUIREMENTS
 ------------
  
 
-The minimum requirement by this project template that your Web server supports PHP 7.2.
+The minimum requirement by this project template that your Web server supports PHP 7.4.
 
 
 INSTALLATION
@@ -153,4 +153,4 @@ Tests are located in `tests` directory.
 
 Run directly from Docker image
 
-    docker run -it -v $PWD/yii-project:/app -w /app yiisoftware/yii2-php:7.2-apache bash
+    docker run -it -v $PWD/yii-project:/app -w /app yiisoftware/yii-php:7.4-apache bash
