@@ -76,7 +76,7 @@
     "require-dev": {
         "foxy/foxy": "^1.0",
         "yiisoft/yii-debug": "^3.0@dev",
-        "hiqdev/composer-config-plugin": "^1.0@dev"
+        "yiisoft/composer-config-plugin": "^1.0@dev"
     },
     "extra": {
         "branch-alias": {
